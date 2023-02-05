@@ -1,4 +1,4 @@
-#PESAPAL DEVELOPER CHALLENGE: Problem 2 - A Diff and a Patch
+<h1>PESAPAL DEVELOPER CHALLENGE: Problem 2 - A Diff and a Patch</h1>
 ##Description
 This program consists of two tools, diff and patch, that allow you to compare two files and generate the differences between them. The output from the diff tool can be used with the patch tool and one of the original files to recreate the other. The tools have been designed to work in a similar manner to the Unix diff and patch tools as described in the POSIX manual, with added flexibility in the algorithms and output format used.
 
