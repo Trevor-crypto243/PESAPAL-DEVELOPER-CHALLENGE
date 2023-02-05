@@ -10,6 +10,54 @@ C++ has been used as the programming language for this project due to its effici
 1. Compile the code using g++ -o diff diff.cpp
 2. Run the tool using the following command ./diff [-c|-e|-f|-u|-C n|-U n] [-br] file1 file2
 
-<h2>Running the Patch Tool<h2>
+<h2>Running the Patch Tool</h2>
 1. Compile the code using g++ -o patch patch.cpp
 2. Run the tool using the following command ./patch [-blNR] [-c|-e|-n|-u] [-d dir] [-D define] [-i patchfile] [-o outfile] [-p num] [-r rejectfile] [file]
+
+
+<h2>Testing the code<h2>
+  Here's a set of test cases to validate the functionality of the diff program:
+  1. Test the basic functionality with two simple files:
+      Create two files, fileA and fileB, with the following contents:
+        fileA:
+          line1
+          line2
+          line3
+          line4
+
+        fileB:
+          line1
+          line2
+          line3
+          line4
+       Run the diff program with the following command:
+          ./diff fileA fileB
+       Check that the output of the program is:
+           line1
+           line2
+           line3
+           line4
+  2. Test the -c option:
+       Create two files, fileA and fileB, with the following contents:
+        fileA:
+          line1
+          line2
+          line3
+          line4
+
+        fileB:
+          line1
+          line2
+          line3
+          line4
+        Run the diff program with the following command:
+          ./diff fileA fileB
+       Check that the output of the program is:
+          *** 3,4 ****
+          line3
+          --- 3,4 ----
+          line4
+      
+<h2>License<h2>
+This program is licensed under the MIT License. A copy of the license can be found in the LICENSE file.
+
